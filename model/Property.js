@@ -1,4 +1,4 @@
-import {Schema,model,models} from "mongoose";
+import mongoose, {Mongoose, Schema,model,models} from "mongoose";
 
 
 const PropertySchema = new Schema({
@@ -100,8 +100,9 @@ const PropertySchema = new Schema({
 }
 );
 
-const Property = models.property || model('Property',PropertySchema);
-export default Property;
+/* const Property = models.property || model('Property',PropertySchema); */
+export default mongoose.models.Property || mongoose.model('Property',PropertySchema);
+
 
 
 

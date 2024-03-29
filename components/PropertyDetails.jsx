@@ -38,7 +38,7 @@ const PropertyDetails = ({property}) => {
                   <div className="text-gray-500 mr-2 font-bold">Nightly</div>
                   <div className="text-2xl font-bold text-blue-500">
                     {property.rates.nightly ? (
-                        `$${property.rates.nightly}`
+                        `Rs${property.rates.nightly}`
                         
                     ):  <FaTimes className='text-red-700'/>} 
                    
@@ -49,14 +49,14 @@ const PropertyDetails = ({property}) => {
                 >
                   <div className="text-gray-500 mr-2 font-bold">Weekly</div>
                   <div className="text-2xl font-bold text-blue-500">{property.rates.weekly ? (
-                        `$${property.rates.weekly}`
+                        `Rs${property.rates.weekly}`
                         
                     ):  <FaTimes className='text-red-700'/>} </div>
                 </div>
                 <div className="flex items-center justify-center mb-4 pb-4 md:pb-0">
                   <div className="text-gray-500 mr-2 font-bold">Monthly</div>
                   <div className="text-2xl font-bold text-blue-500">{property.rates.monthly ? (
-                        `$${property.rates.monthly}`
+                        `Rs${property.rates.monthly}`
                         
                     ):  <FaTimes className='text-red-700'/>} </div>
                 </div>

@@ -27,7 +27,7 @@ const PropertyCard = ({property}) => {
   return (
     <div className="rounded-xl shadow-md relative">
             <Image
-              src={`/images/properties/${property.images[0]}`}
+              src={property.images[0]}
               alt=""
               height={0}
               width={0}
@@ -42,7 +42,7 @@ const PropertyCard = ({property}) => {
               <h3
                 className="absolute top-[10px] right-[10px] bg-white px-4 py-2 rounded-lg text-blue-500 font-bold text-right md:text-center lg:text-right"
               >
-                ${getRateDisplay()}
+                &#8377;{getRateDisplay()}
               </h3>
 
               <div className="flex justify-center gap-4 text-gray-500 mb-4">

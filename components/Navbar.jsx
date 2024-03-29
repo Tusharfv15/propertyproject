@@ -115,6 +115,7 @@ const Navbar = () => {
                       <FaGoogle className='text-white mr-2'/>
                       <span>Login or Register</span>
                       </button>
+                      
 
 
                 ))}
@@ -258,7 +259,7 @@ tabIndex='-1'
           {session && (
 
           <Link
-            href='properties/add'
+            href='/properties/add'
             className={`${pathname === '/properties/add'?'bg-black':''}  text-white block rounded-md px-3 py-2 text-base font-medium  hover:bg-gray-700`}
           >
             Add Property

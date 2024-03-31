@@ -55,7 +55,7 @@ const PropertyEditForm = () => {
                 const defaultRates = {...propertyData.rates};
                 for(const rate in defaultRates){
 
-                    if(defaultRates[rate] == null){
+                    if(defaultRates[rate] === null){
 
                         defaultRates[rate] = '';
                     }

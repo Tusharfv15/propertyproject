@@ -26,6 +26,7 @@ const SearchResultsPage = () => {
 
             try {
                 const res = await fetch(`/api/properties/search?location=${location}&propertyType=${propertyType}`);
+              
 
                 if(res.status === 200){
 

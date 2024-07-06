@@ -15,6 +15,7 @@ connectDB();
     <FeaturedProperties/>
     <HomeProperties/>
     </>
+    
   )
 }
 
